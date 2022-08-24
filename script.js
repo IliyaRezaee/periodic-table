@@ -3,7 +3,7 @@ const textarea = document.getElementById('textarea')
 
 textarea.focus()
 
-createTags(e.target.value)
+createTags(textarea.value)
 
 textarea.addEventListener('keyup', (e) => {
     createTags(e.target.value)
