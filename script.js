@@ -9,9 +9,9 @@ textarea.addEventListener('keyup', (e) => {
     createTags(e.target.value)
 
     if(e.key === 'Enter') {
-        // setTimeout(() => {
-        //     e.target.value = ''
-        // }, 10)
+        setTimeout(() => {
+            e.target.value = e.target.value.trim()
+        }, 10)
 
         randomSelect()
     }
